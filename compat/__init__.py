@@ -43,9 +43,9 @@ except ImportError:
     from six.moves._thread import get_ident  # noqa
 
 try:
-    from django.urls import url, include, handler404, handler500
+    from django.urls import include, handler404, handler500
 except ImportError:
-    from django.conf.urls.defaults import url, include, handler404, handler500  # pyflakes:ignore
+    from django.conf.urls.defaults import include, handler404, handler500  # pyflakes:ignore
 
 try:
     from django.urls import patterns

@@ -42,18 +42,18 @@ try:
 except ImportError:
     from six.moves._thread import get_ident  # noqa
 
-try:
-    from django.urls import include, handler404, handler500
-except ImportError:
-    from django.conf.urls.defaults import include, handler404, handler500  # pyflakes:ignore
+# try:
+#     from django.urls import include, handler404, handler500
+# except ImportError:
+#     from django.conf.urls.defaults import include, handler404, handler500  # pyflakes:ignore
 
-try:
-    from django.urls import patterns
-except ImportError:
-    try:
-        from django.conf.urls.defaults import patterns # pyflakes:ignore
-    except ImportError:
-        pass
+# try:
+#     from django.urls import patterns
+# except ImportError:
+#     try:
+#         from django.conf.urls.defaults import patterns # pyflakes:ignore
+#     except ImportError:
+#         pass
 
 
 # Handle django.utils.encoding rename in 1.5 onwards.
